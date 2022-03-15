@@ -1,0 +1,23 @@
+.circlebox
+{
+    width: 280px;
+    height: 280px;
+}
+header
+{
+    overflow: hidden;
+
+    height: 350px;
+}
+body
+{
+    font-size: 13px;
+}
+h2
+{
+    margin: 20px auto;
+}
+footer
+{
+    margin-top: 50px;
+}
