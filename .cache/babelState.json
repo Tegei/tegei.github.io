@@ -7,6 +7,12 @@
           "options": {}
         },
         {
+          "name": "/Users/m9/tegeiweb/tegei.github.io/node_modules/gatsby-plugin-image/dist/babel-plugin-parse-static-images.js",
+          "options": {
+            "cacheDir": "/Users/m9/tegeiweb/tegei.github.io/.cache/caches/gatsby-plugin-image"
+          }
+        },
+        {
           "name": "/Users/m9/tegeiweb/tegei.github.io/node_modules/@babel/plugin-proposal-optional-chaining/lib/index.js",
           "options": {}
         },
@@ -40,6 +46,12 @@
         {
           "name": "babel-plugin-lodash",
           "options": {}
+        },
+        {
+          "name": "/Users/m9/tegeiweb/tegei.github.io/node_modules/gatsby-plugin-image/dist/babel-plugin-parse-static-images.js",
+          "options": {
+            "cacheDir": "/Users/m9/tegeiweb/tegei.github.io/.cache/caches/gatsby-plugin-image"
+          }
         },
         {
           "name": "/Users/m9/tegeiweb/tegei.github.io/node_modules/@babel/plugin-proposal-optional-chaining/lib/index.js",
@@ -77,6 +89,12 @@
           "options": {}
         },
         {
+          "name": "/Users/m9/tegeiweb/tegei.github.io/node_modules/gatsby-plugin-image/dist/babel-plugin-parse-static-images.js",
+          "options": {
+            "cacheDir": "/Users/m9/tegeiweb/tegei.github.io/.cache/caches/gatsby-plugin-image"
+          }
+        },
+        {
           "name": "/Users/m9/tegeiweb/tegei.github.io/node_modules/@babel/plugin-proposal-optional-chaining/lib/index.js",
           "options": {}
         },
@@ -110,6 +128,12 @@
         {
           "name": "babel-plugin-lodash",
           "options": {}
+        },
+        {
+          "name": "/Users/m9/tegeiweb/tegei.github.io/node_modules/gatsby-plugin-image/dist/babel-plugin-parse-static-images.js",
+          "options": {
+            "cacheDir": "/Users/m9/tegeiweb/tegei.github.io/.cache/caches/gatsby-plugin-image"
+          }
         },
         {
           "name": "/Users/m9/tegeiweb/tegei.github.io/node_modules/@babel/plugin-proposal-optional-chaining/lib/index.js",
