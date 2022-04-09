@@ -1,0 +1,1 @@
+{"version":3,"file":"component---src-pages-member-csv-js-cddcd0df615aad528d37.js","mappings":"sHAKA,UAJkB,WAChB,OAAO","sources":["webpack://tegei/./src/pages/memberCSV.js"],"sourcesContent":["import * as React from \"react\";\nconst IndexPage = () => {\n  return <p>0,1,1,2,3,5,8, 13,</p>;\n};\n\nexport default IndexPage;\n"],"names":[],"sourceRoot":""}
