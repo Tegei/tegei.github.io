@@ -10,7 +10,7 @@
   "scripts": {
     "develop": "gatsby develop",
     "start": "gatsby develop",
-    "build": "gatsby build && mv public docs",
+    "build": "gatsby build && cp -r public/* docs/",
     "serve": "gatsby serve",
     "clean": "gatsby clean"
   },
@@ -22,6 +22,9 @@
     "@emotion/styled": "^11.8.1",
     "framer-motion": "^6.2.8",
     "gatsby": "^4.8.1",
+    "gatsby-plugin-image": "^2.11.1",
+    "gatsby-plugin-sharp": "^4.11.1",
+    "gatsby-source-filesystem": "^4.11.1",
     "react": "^17.0.1",
     "react-dom": "^17.0.1"
   }
