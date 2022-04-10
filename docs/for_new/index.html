@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="utf-8">
+    <title>手芸同好会 新入生向けページ</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@500&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" type="text/css" href="my.css">
+
+</head>
+
+<body>
+    <div id="particles-js">
+        <div id="contents">
+            <div class="rect">
+                <h1>新入生へ</h1>
+                <div class="rect">
+                    <h2>"手芸同好会"とは</h2>
+                    <p>やりたいことを応援するサークル！</p>
+                    <h2>主な活動内容</h2>
+                    <p>全体での発表/交流会！！！<br>班ごとの勉強会！もくもく会！</p>
+                    <p>活動頻度は班ごとに違い、自分で班を作ることもできます！<br>気楽に入って、自分に合った班を探しましょう！</p>
+                </div>
+                <div class="rect">
+                    <h2>入部の流れ</h2>
+                    <ol>
+                        <li>Twitterや以下のフォームから連絡</li>
+                        <li>中の人が確認し、学籍番号宛にメールを送信</li>
+                        <li>メールに付随するリンクからDiscordサーバーに！</li>
+                    </ol>
+                </div>
+                <div class="rect">
+                    <h2>入部/質問連絡フォーム</h2>
+                    <p>入部や質問、その他連絡がある場合はこちらのフォームよりお願いいたします。<br>質問のみの場合でも、回答の為学籍番号をご入力ください。<br>(学内の方でない場合は、メールアドレスをお願いします。)</p>
+                    <p>以下のフォームを送信すると、<br>中の人が確認した後に学籍番号あてにメールが届きます。<br><span class="red_text">*</span>の付いた部分は必須項目です。</p>
+                    <form id="join_form" class="rect"
+                        action="https://docs.google.com/forms/u/1/d/e/1FAIpQLScymug0qiS6j05ohYC4VdNEnVMYwJ5nNCCYXxXmoXNICQGxYA/formResponse">
+                        <label for="num">学籍番号<span class="red_text">*</span></label>
+                        <textarea id="num" name="entry.1101079116" placeholder="s1XX0XXX"></textarea>
+                        <label for="name">名前(HNでも可)<span class="red_text">*</span></label>
+                        <textarea id="name" name="entry.135476250" placeholder="○○"></textarea>
+                        <label for="msg">備考欄</label>
+                        <textarea id="msg" name="entry.1070380595" placeholder="ご気軽にどうぞ！"></textarea>
+                        <button type="submit" name="button" value="送信">送信</button>
+                    </form>
+                </div>
+                <p>このページの作者 : たかかつ</p>
+                <p>© 2021 手芸同好会</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script src="https://threejs.org/examples/js/libs/stats.min.js"></script>
+    <script src="my.js"></script>
+</body>
+
+</html>
