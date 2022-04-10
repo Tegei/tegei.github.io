@@ -12,10 +12,11 @@ import {
   ModalHeader,
   ModalCloseButton,
   useDisclosure,
-  Image
+  Image,
 } from "@chakra-ui/react";
 import { getMembers } from "../components/getMember";
 import "../static/member.css";
+import { StaticImage } from "gatsby-plugin-image";
 
 const textColor = "#C44FC4";
 
@@ -40,6 +41,25 @@ const Content = ({ tag, content }) => {
   );
 };
 
+const MemberImage = ({ path }) => {
+  return (
+    <Image
+      boxSize="200px"
+      borderRadius="md"
+      src={
+        "https://raw.githubusercontent.com/Tegei/tegei.github.io/main/images/" +
+        path
+      }
+      alt={
+        "https://raw.githubusercontent.com/Tegei/tegei.github.io/main/images/" +
+        path
+      }
+      width={200}
+      aspectRatio={1 / 1}
+    />
+  );
+};
+
 const MemberModal = ({ member, isOpen, onClose }) => {
   return (
     <>
@@ -48,16 +68,16 @@ const MemberModal = ({ member, isOpen, onClose }) => {
         <ModalContent p="5" maxW="320px" borderRadius="md" borderWidth="1px">
           <ModalHeader>{member.name}</ModalHeader>
 
-          <Box boxSize="200px">
-            <Image
-              src={"https://raw.githubusercontent.com/Tegei/tegei.github.io/main/images/"+member.imagePath}
-              alt="icon"
-              width={200}
-              aspectRatio={1 / 1}
-            />
-          </Box>
+          <MemberImage path={member.imagePath} />
+
           {Object.keys(member).map((key) => {
-            return <Content tag={key} content={member[key]} />;
+            return (
+              <>
+                {key !== "imagePath" && (
+                  <Content tag={key} content={member[key]} />
+                )}
+              </>
+            );
           })}
 
           <ModalCloseButton />
@@ -81,14 +101,7 @@ const ShowMember = ({ member }) => {
       backgroundColor="whiteAlpha.800"
       onClick={onOpen}
     >
-      <Box boxSize="200px">
-        <Image
-          src="../images/icon.jpg"
-          alt="icon"
-          width={200}
-          aspectRatio={1 / 1}
-        />
-      </Box>
+      <MemberImage path={member.imagePath} />
       <Content tag="name" content={member.name} />
       <MemberModal member={member} isOpen={isOpen} onClose={onClose} />
     </Box>
@@ -123,12 +136,53 @@ const ShowMemberList = () => {
   );
 };
 
-const IndexPage = () => {
+const Header = () => {
+  return (
+    <a href="/">
+      <Flex
+        as="header"
+        top={0}
+        width="100%"
+        shadow="sm"
+        py={4}
+        px={8}
+        backgroundColor="twitter.100"
+      >
+        <StaticImage height={100} src="../images/tegei_title_black.png" />
+      </Flex>
+    </a>
+  );
+};
+
+const Footer = () => {
+  return (
+      <Flex
+        as="footer"
+        top={0}
+        mt={20}
+        width="100%"
+        shadow="sm"
+        py={4}
+        px={8}
+        backgroundColor="twitter.300"
+        style={{position:"relative",bottom:0}}
+        color="white"
+      >
+        © 2022 手芸同好会<br/>製作者:朱雀匠
+      </Flex>
+  );
+};
+
+const MemberPage = () => {
   return (
     <>
+    <div height="100%">
+      <Header />
       <ShowMemberList />
+    </div>
+    <Footer />
     </>
   );
 };
 
-export default IndexPage;
+export default MemberPage;

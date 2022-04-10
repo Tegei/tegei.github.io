@@ -1,6 +1,6 @@
 export default{}
 
-const memberListURL="https://raw.githubusercontent.com/Tegei/tegei.github.io/suzaku/memberList.csv"
+const memberListURL="https://raw.githubusercontent.com/Tegei/tegei.github.io/main/memberList.csv"
 
 export const getMembers= async (dataLength=5)=>{
     const res = await fetch(memberListURL)
