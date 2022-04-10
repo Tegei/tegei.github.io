@@ -1,0 +1,307 @@
+@charset "utf-8";
+
+.circlebox {
+  position: relative;
+
+  width: 500px;
+  height: 500px;
+  margin: 20px auto 0;
+}
+.circle1 {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+
+  width: 100%;
+  height: 100%;
+
+  content: "";
+  transform-origin: 49% 49%;
+  animation: rotate 2s linear 0s infinite;
+
+  border: gray solid 1px;
+  border-radius: 50%;
+}
+.circle2 {
+  position: absolute;
+  top: -20px;
+  left: 20px;
+
+  width: 100%;
+  height: 100%;
+
+  content: "";
+  transform-origin: 51% 51%;
+  animation: rotate 2s linear 0s infinite;
+
+  border: gray solid 1px;
+  border-radius: 50%;
+}
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.title {
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  width: 100%;
+  height: 100%;
+
+  animation: title 4s ease-in-out 0s alternate infinite;
+
+  border: gray 1px solid;
+  border-radius: 50%;
+
+  stroke-dasharray: 500px;
+  stroke-dashoffset: 500px;
+}
+.title path {
+  stroke: rgb(33, 145, 2);
+  stroke-width: 2px;
+}
+@keyframes title {
+  0% {
+    stroke-dashoffset: 500px;
+  }
+  100% {
+    stroke-dashoffset: 0;
+  }
+}
+
+.hand {
+  position: absolute;
+  top: calc(50% - 175px);
+  left: calc(50% - 175px);
+
+  width: 350px;
+  height: 350px;
+
+  animation: hand 7s ease-in-out 0s alternate infinite;
+
+  opacity: 1;
+
+  stroke-width: 1px;
+  stroke-dasharray: 500px;
+  stroke-dashoffset: 500px;
+}
+.hand path {
+  stroke-width: 1px;
+  stroke: gray;
+}
+@keyframes hand {
+  0% {
+    fill: transparent;
+    stroke-dashoffset: 500px;
+  }
+  100% {
+    stroke-dashoffset: 0;
+  }
+}
+
+
+canvas {
+  position: fixed;
+  z-index: -1;
+  top: 0;
+
+  margin: 100px;
+}
+header {
+  position: relative;
+
+  height: 500px;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: "Raleway", "Noto Sans JP", sans-serif;
+  font-size: 16px;
+  width: 100vw;
+  background: white;
+}
+
+h2 {
+  font-size: 1.5em;
+
+  position: relative;
+
+  width: 10em;
+  margin: 50px auto 20px;
+  padding: 10px;
+
+  text-align: center;
+
+  color: rgb(80, 80, 80);
+}
+.h21 {
+  font-size: 1.2em;
+
+  width: 6em;
+}
+h2::before,
+h2::after,
+h2 span::before,
+h2 span::after,
+h2 span span::before,
+h2 span span::after,
+h2 span span span::before,
+h2 span span span::after {
+  position: absolute;
+
+  content: "";
+
+  background: rgb(120, 120, 120);
+}
+h2::before {
+  bottom: 0;
+  left: 0;
+
+  width: 15px;
+  height: 1px;
+}
+h2::after {
+  bottom: 0;
+  left: 0;
+
+  width: 1px;
+  height: 15px;
+}
+
+h2 span::before {
+  right: 0;
+  bottom: 0;
+
+  width: 15px;
+  height: 1px;
+}
+h2 span::after {
+  right: 0;
+  bottom: 0;
+
+  width: 1px;
+  height: 15px;
+}
+
+h2 span span::before {
+  top: 0;
+  right: 0;
+
+  width: 15px;
+  height: 1px;
+}
+h2 span span::after {
+  top: 0;
+  right: 0;
+
+  width: 1px;
+  height: 15px;
+}
+
+h2 span span span::before {
+  top: 0;
+  left: 0;
+
+  width: 15px;
+  height: 1px;
+}
+h2 span span span::after {
+  top: 0;
+  left: 0;
+
+  width: 1px;
+  height: 15px;
+}
+
+ul {
+  text-align: center;
+}
+li {
+  display: inline-block;
+}
+a {
+  font-size: 1.4em;
+
+  position: relative;
+  position: relative;
+
+  display: block;
+
+  width: 5em;
+  margin: 10px;
+
+  transition: 0.3s;
+  text-align: center;
+  text-decoration: none;
+
+  color: rgb(0, 0, 0);
+}
+a:hover {
+  letter-spacing: 1.5px;
+}
+a::before {
+  position: absolute;
+  top: -5px;
+  left: 0;
+
+  width: 0;
+  height: 1px;
+  margin: 0 auto;
+
+  content: "";
+  transition: 0.3s;
+
+  background: rgb(120, 120, 120);
+}
+a::after {
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+
+  width: 0;
+  height: 1px;
+  margin: 0 auto;
+
+  content: "";
+  transition: 0.3s;
+
+  background: rgb(120, 120, 120);
+}
+a:hover::after {
+  width: 5em;
+}
+
+a:hover::before {
+  width: 0;
+}
+footer {
+  font-size: 0.85em;
+
+  margin: 50px auto 0;
+
+  text-align: center;
+
+  color: rgb(65, 65, 65);
+  background: rgb(244, 244, 244);
+}
+
+.abstract{
+  position: relative;
+
+  font-size: 1em;
+  text-align: center;
+  
+  width: 30em;
+
+  margin: 0 auto;
+
+}
