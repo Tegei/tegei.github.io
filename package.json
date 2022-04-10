@@ -10,13 +10,22 @@
   "scripts": {
     "develop": "gatsby develop",
     "start": "gatsby develop",
-    "build": "gatsby build && mv public docs",
+    "build": "gatsby build && cp -r public/* docs/",
     "serve": "gatsby serve",
     "clean": "gatsby clean"
   },
   "dependencies": {
+    "@chakra-ui/gatsby-plugin": "^2.0.4",
+    "@chakra-ui/icons": "^1.1.7",
+    "@chakra-ui/react": "^1.8.7",
+    "@emotion/react": "^11.8.2",
+    "@emotion/styled": "^11.8.1",
+    "framer-motion": "^6.2.8",
     "@emotion/css": "^11.7.1",
     "gatsby": "^4.8.1",
+    "gatsby-plugin-image": "^2.11.1",
+    "gatsby-plugin-sharp": "^4.11.1",
+    "gatsby-source-filesystem": "^4.11.1",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
     "styled-components": "^5.3.3"
