@@ -3,8 +3,9 @@
   height: 13em;
   margin: 1em;
   object-fit: scale-down;
-  filter:drop-shadow(1px 3px 5px rgba(0, 0, 0, 0.2));
+  filter:drop-shadow(1px 3px 5px rgba(0, 0, 0, 0.5));
 }
+
 
 .imageList {
   display: flex;
