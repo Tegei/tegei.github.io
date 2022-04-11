@@ -27,13 +27,7 @@ const Content = ({ tag, content }) => {
         <Badge width={14} colorScheme="blackAlpha" color="gray.600">
           {tag}
         </Badge>
-        <Text
-          ml={2}
-          textTransform="uppercase"
-          fontSize="sm"
-          fontWeight="bold"
-          color={textColor}
-        >
+        <Text ml={2} fontSize="sm" fontWeight="bold" color={textColor}>
           {content}
         </Text>
       </Flex>
@@ -156,31 +150,34 @@ const Header = () => {
 
 const Footer = () => {
   return (
-      <Flex
-        as="footer"
-        top={0}
-        mt={20}
-        width="100%"
-        shadow="sm"
-        py={4}
-        px={8}
-        backgroundColor="twitter.300"
-        style={{position:"relative",bottom:0}}
-        color="white"
-      >
-        © 2022 手芸同好会<br/>製作者:朱雀匠
-      </Flex>
+    <Flex
+      as="footer"
+      top={0}
+      mt={20}
+      width="100%"
+      shadow="sm"
+      py={4}
+      px={8}
+      backgroundColor="twitter.300"
+      style={{ position: "relative", bottom: 0 }}
+      color="white"
+    >
+      © 2022 手芸同好会
+      <br />
+      製作者:朱雀匠
+    </Flex>
   );
 };
 
 const MemberPage = () => {
   return (
     <>
-    <div height="100%">
       <Header />
+      <Text ml={2} fontSize="sm" fontWeight="bold" color={"gray.700"}>
+        詳しい情報はメンバーをクリック!
+      </Text>
       <ShowMemberList />
-    </div>
-    <Footer />
+      <Footer />
     </>
   );
 };
