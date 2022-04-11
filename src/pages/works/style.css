@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:wght@100;400;600&family=Noto+Sans+JP:wght@400;700&display=swap');
+
+h1 {
+  text-align: center;
+  font-size: 5em;
+  font-weight: 100;
+  color: rgb(255, 255, 255);
+  margin: 0;
+  padding-top: 1em;
+  padding-bottom: 1em;
+}
+
+p {
+  text-align: center;
+  color: rgba(255, 255, 255, 0.74);
+}
+
+body {
+  margin: 0 auto;
+  padding: 0 auto;
+}
+
+footer {
+  background: rgba(0, 0, 0, 0.308);
+  color: rgba(255, 255, 255, 0.74);
+  text-align: center;
+  font-size: small;
+}
+
+.context {
+  background: rgba(0, 0, 0, 0.308);
+  margin: 0 10vw 2em;
+  font-family: 'Exo 2','Noto Sans JP',sans-serif;
+}
+
+

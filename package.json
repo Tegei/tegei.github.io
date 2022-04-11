@@ -22,12 +22,27 @@
     "@emotion/styled": "^11.8.1",
     "framer-motion": "^6.2.8",
     "@emotion/css": "^11.7.1",
+    "animate.css": "^4.1.1",
     "gatsby": "^4.8.1",
+<<<<<<< HEAD
+    "gatsby-plugin-image": "^2.7.0",
+    "gatsby-plugin-sharp": "^4.11.1",
+    "gatsby-source-filesystem": "^4.11.1",
+    "gatsby-transformer-sharp": "^4.11.0",
+=======
     "gatsby-plugin-image": "^2.11.1",
     "gatsby-plugin-sharp": "^4.11.1",
     "gatsby-source-filesystem": "^4.11.1",
+>>>>>>> 5b01fcf2444493448da18d5f5bf24174fb5021f9
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
-    "styled-components": "^5.3.3"
+    "react-medium-image-zoom": "^4.3.5",
+    "react-particles-webgl": "^1.0.10",
+    "react-player": "^2.10.0",
+    "react-tabs": "^4.2.0",
+    "sharp": "^0.30.3",
+    "styled-components": "^5.3.3",
+    "three": "^0.122.0",
+    "vanta": "^0.5.21"
   }
 }
