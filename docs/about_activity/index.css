@@ -1,0 +1,275 @@
+body {
+    background-image: url('background/default/Desktop4.png');
+    position: relative;
+    min-height: 100%;
+    background-size: cover;
+    background-clip: content-box;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.empty50{
+    height: 50px;
+    /* margin-bottom: 50px;; */
+}
+
+.black10{    
+    background-color: black;
+    height: 10px;
+}
+
+.black20{
+    background-color: black;
+    height: 20px;
+}
+
+.black50{
+    background-color: black;
+    height: 50px;
+}
+
+.black50 p{
+    color: #ffffff;
+    font-size: 18px;
+    text-align:center;
+    margin: 0 0;
+    padding-top: 15px;
+}
+
+.white{
+    background-color: white;
+}
+
+.title {
+    background: url('text_img/tegei_title.png');
+    background-color: black;
+    height: 200;
+    background-size: 65%;
+    /* background-attachment: fixed; */
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    /* margin-top: 50px; */
+}
+
+.mainText {
+    padding: 10px;
+    margin: 10px;
+    text-align: center;
+    color: #ffffff;
+    /* padding: 0 50%; */
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 1000%;
+}
+
+.sub {
+    font-family: 'DotGothic16', sans-serif;
+    text-align: center;
+    font-size: 200%;
+    color: red;
+}
+
+.lock {
+    /* background: url('Key.png');
+    background-size: 100px;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: 50% 10%;
+    height: 220; */
+    animation: changekey 2s linear infinite;
+}
+
+@keyframes changekey {
+    0% {
+        background: url('icon/Key.png');
+        background-size: 100px;
+        /* background-attachment: fixed; */
+        background-repeat: no-repeat;
+        background-position: 50% 50%;
+        height: 220;
+    }
+    50% {
+        background: url("icon/Key2.png");
+        background-size: 120px;
+        /* background-attachment: fixed; */
+        background-repeat: no-repeat;
+        background-position: 50% 50%;
+        height: 220;
+    }
+    100% {
+        background: url('icon/Key.png');
+        background-size: 100px;
+        /* background-attachment: fixed; */
+        background-repeat: no-repeat;
+        background-position: 50% 50%;
+        height: 220;
+    }
+}
+
+.lock:active {
+    /* background-color: white; */
+}
+
+
+/*ボタン装飾*/
+
+.hide_area label {
+    display: block;
+    /* padding: 8px; */
+    color: #fff;
+    font-weight: bold;
+    /* background: #999; */
+    cursor: pointer;
+}
+
+.hide_area input {
+    display: none;
+}
+
+.hide_area .hide {
+    height: 0;
+    padding: 0;
+    overflow: hidden;
+    opacity: 0;
+    transition: 0.8s;
+}
+
+.hide_area input:checked~.hide {
+    height: auto;
+    opacity: 1;
+}
+
+.backcolor {
+    background-color: rgba(255, 255, 255, 0.5);
+    background-size: contain;
+}
+
+body,
+html {
+    height: 100%;
+    margin: 0 auto;
+}
+
+.area {
+    background-color: #ffffff;
+    overflow: hidden;
+    width: 100%;
+    height: auto;
+    padding: 5% 0;
+}
+
+.area h2 {
+    font-family: 'Impact';
+    font-size: 75px;
+    text-align: center;
+}
+
+.area p {
+    margin-left: 50px;
+    margin-right: 50px;
+    text-align: center;
+    font-size: 20px;
+}
+
+
+.area .p1 {
+    text-align: center;
+    font-size: 16px;
+}
+
+.cd-fixed-bg {
+    position: relative;
+    min-height: 100%;
+    background-size: cover;
+    background-clip: content-box;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center center;
+    z-index: 2;
+}
+
+.cd-fixed-bg.cd-bg-1 {
+    background-image: url('background/hide/Poster_Blender3.png');
+}
+
+.cd-fixed-bg.cd-bg-2 {
+    background-image: url('background/hide/Poster_Unity3.png');
+}
+
+.cd-fixed-bg.cd-bg-3 {
+    background-image: url('background/hide/Poster_Design1.png');
+}
+
+.cd-fixed-bg.cd-bg-4 {
+    background-image: url('background/hide/Poster_Web.png');
+}
+
+.cd-fixed-bg.cd-bg-5 {
+    background-image: url('background/hide/Poster_Movie.png');
+}
+
+.scrollbox {
+    /* margin     : auto; */
+    width      : 100%;
+    font-size  : 140%;
+    line-height: 1.5em;
+    text-align : center;
+    border     : 1px solid #666;
+    color      : #ffffff;
+    background-color : #fff;
+    overflow   : hidden;
+    display: flex;
+}
+
+.scrollbox div {
+    color: rgb(0, 0, 0);
+    margin: 5px 0;
+    padding-left: 50%;
+    flex: 0 0 auto;
+    white-space: nowrap;
+}
+
+.scrollbox div:nth-child(odd){
+    animation   : scrollAnime 20s -10s linear infinite;
+}
+
+.scrollbox div:nth-child(even){
+    animation   : scrollAnime2 20s linear infinite;
+}
+
+@keyframes scrollAnime{
+    0% { transform: translateX(100%)}
+  100% { transform: translateX(-100%)}
+}
+
+@keyframes scrollAnime2{
+    0% { transform: translateX(0)}
+  100% { transform: translateX(-200%)}
+}
+
+.link{
+    background-color: black;
+    text-align: center;
+    font-size: 24px;
+    padding: 5px 0;
+}
+
+.link_white{
+    background-color: rgb(255, 255, 255);
+    text-align: center;
+    font-size: 24px;
+    padding: 5px 0;
+}
+
+.cd-fixed-bg.cd-bg-6 {
+    background-image: url('background/default/Desktop5.png');
+}
+
+
+.cd-fixed-bg p{
+    /* opacity: 0; */
+    color: rgba(255, 255, 255, 0);
+    font-size: 18px;
+    text-align: center;
+    margin: 0 0;
+}
